@@ -43,9 +43,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="{{route('admin.dashboard')}}" class="brand-link">
-            <img src="{{asset('dist/img/minlogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-                 style="opacity: .8">
-            <span class="brand-text font-weight-light">Fırat Feb</span>
+
+            <span class="brand-text font-weight-light">Doviz Kontrol Sitemi</span>
         </a>
 
         <!-- Sidebar -->
@@ -67,35 +66,8 @@
                             </p>
                         </a>
 
-
-                    <li class="nav-item has-treeview">
-                        <a href="{{route('admin.form1')}}" class="nav-link">
-                            <i class="nav-icon fas fa-copy"></i>
-                            <p>
-                               Foreign Student application forms
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item has-treeview">
-                        <a href="{{route('admin.log')}}" class="nav-link">
-                            <i class="nav-icon fas fa-copy"></i>
-                            <p>
-                                    Log Kayıtları
-                            </p>
-                        </a>
-                    </li>
-
-                    <li class="nav-item has-treeview">
-                        <a href="#" class="nav-link">
-                            <i class="nav-icon fas fa-copy"></i>
-                            <p>
-                                Veritabanı Yedekleri
-                            </p>
-                        </a>
-                    </li>
                     <li class="nav-item  menu-open">
-                        <a href="{{route('logout')}}" class="nav-link active">
+                        <a href="{{url('cikis')}}" class="nav-link active">
                             <i class="nav-icon fas fa-tachometer-alt"></i>
                             <p>
                                 Çıkış Yap

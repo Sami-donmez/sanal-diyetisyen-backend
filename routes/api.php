@@ -14,6 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/me','App\Http\Controllers\Api\UserController@me');
+Route::get('/food','App\Http\Controllers\Api\FoodController@index');
+Route::post('/food','App\Http\Controllers\Api\FoodController@add');
+Route::post('/food/{food}','App\Http\Controllers\Api\FoodController@update');
+Route::post('/food/{food}/delete','App\Http\Controllers\Api\FoodController@delete');
+Route::get('/water','App\Http\Controllers\Api\WaterController@index');
+Route::post('/water','App\Http\Controllers\Api\WaterController@add');
+Route::post('/water','App\Http\Controllers\Api\WaterController@update');
+Route::get('/sport','App\Http\Controllers\Api\SportController@index');
+Route::post('/sport','App\Http\Controllers\Api\SportController@add');
+Route::post('/sport/{sport}','App\Http\Controllers\Api\SportController@update');
+Route::post('/sport/{sport}/delete','App\Http\Controllers\Api\SportController@delete');
